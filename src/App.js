@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LandingPage from "./landingpage.js";
+import JoinUsPage from "./joinuspage.js";
+import TableReservationPage from "./table.js";
+import MenuPage from "./menupage.js";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <nav className="nav">
+            <b>
+                    <h2>JUNGLE SPICE</h2>
+                </b>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/join-us">Join Us</Link>
+                    </li>
+                    <li>
+                        <Link to="/menu">Menu</Link>
+                    </li>
+                    <li>
+                        <Link to="/reservation">Table Reservation</Link>
+                    </li>
+                    {/* <li>
+                        <Link to="/ContactPage">Contact Us</Link>
+                    </li> */}
+                </ul>
+            </nav>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/join-us" element={<JoinUsPage />} />
+                <Route path="/menu" element={<MenuPage />} />
+                <Route path="/reservation" element={<TableReservationPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App;
+export default App; 

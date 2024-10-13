@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/resort/static/css/main.9029e775.css",
+    "main.js": "/resort/static/js/main.5126197b.js",
+    "static/js/453.64512fd7.chunk.js": "/resort/static/js/453.64512fd7.chunk.js",
+    "static/media/hotel2.jpeg": "/resort/static/media/hotel2.0c534e017f6f0785143a.jpeg",
+    "index.html": "/resort/index.html",
+    "main.9029e775.css.map": "/resort/static/css/main.9029e775.css.map",
+    "main.5126197b.js.map": "/resort/static/js/main.5126197b.js.map",
+    "453.64512fd7.chunk.js.map": "/resort/static/js/453.64512fd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9029e775.css",
+    "static/js/main.5126197b.js"
+  ]
+}
